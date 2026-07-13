@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmbse_blog=self.webpackChunkmbse_blog||[]).push([[1903],{1912:s=>{s.exports=JSON.parse('{"blogBasePath":"/blog","blogTitle":"MBSE Explained","authorsListPath":"/blog/authors"}')}}]);
