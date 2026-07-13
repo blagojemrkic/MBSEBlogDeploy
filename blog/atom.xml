@@ -223,6 +223,13 @@ A lightweight, text-based diagramming tool.</p>
             <name>Blagoje Mrkic</name>
             <uri>https://blnlabs.com</uri>
         </author>
+        <category label="automotive" term="automotive"/>
+        <category label="german automotive" term="german automotive"/>
+        <category label="MBSE" term="MBSE"/>
+        <category label="systems engineering" term="systems engineering"/>
+        <category label="outsourcing" term="outsourcing"/>
+        <category label="Open Source" term="Open Source"/>
+        <category label="EV" term="EV"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[The Lost Decade: How Scandal and Outsourcing Derailed the German Automotive Industry (2010-2020)]]></title>
@@ -270,6 +277,13 @@ A lightweight, text-based diagramming tool.</p>
             <name>Blagoje Mrkic</name>
             <uri>https://blnlabs.com</uri>
         </author>
+        <category label="automotive" term="automotive"/>
+        <category label="german automotive" term="german automotive"/>
+        <category label="MBSE" term="MBSE"/>
+        <category label="systems engineering" term="systems engineering"/>
+        <category label="outsourcing" term="outsourcing"/>
+        <category label="Dieselgate" term="Dieselgate"/>
+        <category label="EV" term="EV"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Supercharge Your MBSE Workflow: AI for Automotive Requirements Analysis]]></title>
@@ -373,6 +387,87 @@ A lightweight, text-based diagramming tool.</p>
             <name>Blagoje Mrkic</name>
             <uri>https://blnlabs.com</uri>
         </author>
+        <category label="MBSE" term="MBSE"/>
+        <category label="automotive" term="automotive"/>
+        <category label="EV" term="EV"/>
+        <category label="AI" term="AI"/>
+        <category label="LLM" term="LLM"/>
+        <category label="requirements engineering" term="requirements engineering"/>
+        <category label="automation" term="automation"/>
+        <category label="n8n" term="n8n"/>
+        <category label="Ollama" term="Ollama"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[AI-Powered Requirements: Automating MBSE for Smarter Automotive Specs]]></title>
+        <id>https://mbseexplained.com/blog/ai-powered-requirements-automating-mbse-automotive-specs/</id>
+        <link href="https://mbseexplained.com/blog/ai-powered-requirements-automating-mbse-automotive-specs/"/>
+        <updated>2025-10-10T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[AI powered requirements with MBSE]]></summary>
+        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="AI powered requirements with MBSE" src="https://mbseexplained.com/assets/images/banner-1ba87614d225727cd29403036351f8d9.jpg" width="1280" height="720" class="img_ev3q"></p>
+<p>AI powered requirements with MBSE</p>
+<p>Welcome back to MBSE Explained! In my years working as a model-based developer and architect in the automotive world, I’ve seen the complexity of vehicle systems explode. We’ve moved from isolated ECUs to a world of software-defined vehicles (SDVs) that are constantly connected, updated, and evolving. This shift has turned traditional requirements engineering—often managed in spreadsheets and documents—into a significant bottleneck. It's slow, prone to error, and struggles to keep up with the pace of innovation demanded by modern EVs and connected cars.</p>
+<p>But what if we could automate the most tedious parts of this process? What if we could leverage artificial intelligence to help us create clearer, more consistent, and more robust requirements directly within our models? That’s exactly what the fusion of AI and Model-Based Systems Engineering (MBSE) promises. This isn't science fiction; it's the next logical step in building smarter systems. In this post, we'll explore how AI is set to revolutionize requirements engineering for the automotive industry, making our development cycles faster and our vehicles smarter.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-modern-automotive-challenge-a-flood-of-requirements">The Modern Automotive Challenge: A Flood of Requirements<a href="https://mbseexplained.com/blog/ai-powered-requirements-automating-mbse-automotive-specs/#the-modern-automotive-challenge-a-flood-of-requirements" class="hash-link" aria-label="Direct link to The Modern Automotive Challenge: A Flood of Requirements" title="Direct link to The Modern Automotive Challenge: A Flood of Requirements" translate="no">​</a></h2>
+<p>The software-defined vehicle isn't just a car with a big screen; it's a complex, distributed computing system on wheels. Consider the sheer volume and variety of requirements we now juggle:</p>
+<ul>
+<li class=""><strong>Connectivity:</strong> Features like Vehicle-to-Everything (V2X) communication and seamless cloud integration for telematics and over-the-air (OTA) updates.</li>
+<li class=""><strong>Functional Safety (ISO 26262):</strong> Strict mandates to ensure electronic systems don't fail in dangerous ways.</li>
+<li class=""><strong>Cybersecurity (ISO/SAE 21434):</strong> Protecting the vehicle from malicious attacks, a non-negotiable for connected systems.</li>
+<li class=""><strong>Customer Features:</strong> A constantly growing list of demands for infotainment, driver assistance (ADAS), and personalization.</li>
+</ul>
+<p>Managing these interconnected requirements in isolated documents is a recipe for disaster. It leads to ambiguity, missed dependencies, and costly rework late in the development cycle. MBSE provides the structured, model-based foundation to manage this complexity, but the initial effort of capturing and refining thousands of requirements is still immense.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="where-mbse-meets-ai-the-automation-powerhouse">Where MBSE Meets AI: The Automation Powerhouse<a href="https://mbseexplained.com/blog/ai-powered-requirements-automating-mbse-automotive-specs/#where-mbse-meets-ai-the-automation-powerhouse" class="hash-link" aria-label="Direct link to Where MBSE Meets AI: The Automation Powerhouse" title="Direct link to Where MBSE Meets AI: The Automation Powerhouse" translate="no">​</a></h2>
+<p>This is where AI changes the game. Think of MBSE as the perfect chassis for systems engineering—it provides the structure, traceability, and a single source of truth. AI is the intelligent engine we can now place inside that chassis.</p>
+<p>By integrating AI, specifically Natural Language Processing (NLP) and machine learning algorithms, into an MBSE workflow, we can automate tasks that have always been manual, time-consuming, and error-prone. The AI isn’t replacing the systems engineer; it’s becoming their most powerful assistant, capable of processing vast amounts of information and identifying patterns humans might miss.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="practical-ai-applications-for-automotive-requirements">Practical AI Applications for Automotive Requirements<a href="https://mbseexplained.com/blog/ai-powered-requirements-automating-mbse-automotive-specs/#practical-ai-applications-for-automotive-requirements" class="hash-link" aria-label="Direct link to Practical AI Applications for Automotive Requirements" title="Direct link to Practical AI Applications for Automotive Requirements" translate="no">​</a></h2>
+<p>So, how does this work in practice? Let's break down a few key applications that are already becoming a reality.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-extracting-requirements-from-unstructured-sources">1. Extracting Requirements from Unstructured Sources<a href="https://mbseexplained.com/blog/ai-powered-requirements-automating-mbse-automotive-specs/#1-extracting-requirements-from-unstructured-sources" class="hash-link" aria-label="Direct link to 1. Extracting Requirements from Unstructured Sources" title="Direct link to 1. Extracting Requirements from Unstructured Sources" translate="no">​</a></h3>
+<p>Engineers receive input from countless sources: customer feature requests, marketing documents, federal regulations, and technical standards. An AI-powered tool can scan these documents and perform a first pass at identifying and formalizing potential requirements.</p>
+<ul>
+<li class=""><strong>Example:</strong> An NLP model could parse a 300-page UNECE regulation on cybersecurity and automatically generate a set of candidate requirements, classifying them by priority and linking them to the source text. This alone can save weeks of manual work.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-automated-requirement-generation-and-refinement">2. Automated Requirement Generation and Refinement<a href="https://mbseexplained.com/blog/ai-powered-requirements-automating-mbse-automotive-specs/#2-automated-requirement-generation-and-refinement" class="hash-link" aria-label="Direct link to 2. Automated Requirement Generation and Refinement" title="Direct link to 2. Automated Requirement Generation and Refinement" translate="no">​</a></h3>
+<p>Once high-level stakeholder needs are in the model, AI can help decompose them into detailed, verifiable system and software requirements. It can learn from past projects and established patterns to ensure requirements are written clearly and consistently.</p>
+<ul>
+<li class=""><strong>Example:</strong> A high-level need like, <em>"The vehicle shall support OTA updates for the powertrain controller,"</em> can be automatically broken down by an AI into specific requirements for <strong>security</strong> (e.g., "The update package shall be cryptographically signed"), <strong>performance</strong> (e.g., "The update shall complete within 15 minutes with the vehicle in a safe state"), and <strong>reliability</strong> (e.g., "A robust rollback mechanism shall be implemented in case of update failure").</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-consistency-and-conflict-detection">3. Consistency and Conflict Detection<a href="https://mbseexplained.com/blog/ai-powered-requirements-automating-mbse-automotive-specs/#3-consistency-and-conflict-detection" class="hash-link" aria-label="Direct link to 3. Consistency and Conflict Detection" title="Direct link to 3. Consistency and Conflict Detection" translate="no">​</a></h3>
+<p>In a model with thousands of requirements, it's nearly impossible for a human to spot every contradiction. AI excels at this. It can analyze the entire requirements set within the MBSE model to flag potential issues.</p>
+<ul>
+<li class=""><strong>Example:</strong> The model might contain one requirement for a sub-second boot time for an infotainment ECU and another from a cybersecurity stakeholder demanding extensive boot-time integrity checks. An AI can immediately flag this conflict, allowing architects to negotiate a trade-off early in the design phase, not during integration testing.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-automating-traceability">4. Automating Traceability<a href="https://mbseexplained.com/blog/ai-powered-requirements-automating-mbse-automotive-specs/#4-automating-traceability" class="hash-link" aria-label="Direct link to 4. Automating Traceability" title="Direct link to 4. Automating Traceability" translate="no">​</a></h3>
+<p>Manually creating links between requirements, architecture blocks, and test cases is one of the most tedious tasks in MBSE. AI can suggest and even automatically create these traceability links based on semantic analysis of the text. This not only saves time but also ensures the model remains a true, interconnected digital thread.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="real-world-example-a-cloud-linked-ev-charging-system">Real-World Example: A Cloud-Linked EV Charging System<a href="https://mbseexplained.com/blog/ai-powered-requirements-automating-mbse-automotive-specs/#real-world-example-a-cloud-linked-ev-charging-system" class="hash-link" aria-label="Direct link to Real-World Example: A Cloud-Linked EV Charging System" title="Direct link to Real-World Example: A Cloud-Linked EV Charging System" translate="no">​</a></h2>
+<p>Let's ground this with a concrete automotive example. Imagine we are designing an onboard charger ECU that communicates with a cloud backend to authorize payments and optimize charging schedules.</p>
+<ol>
+<li class=""><strong>Input:</strong> The high-level feature is "The ECU must securely manage charging sessions via the cloud." We also feed the AI relevant standards like ISO 15118 (for vehicle-to-grid communication) and ISO/SAE 21434 (cybersecurity).</li>
+<li class=""><strong>AI + MBSE Process:</strong>
+<ul>
+<li class="">The AI's NLP engine parses the standards and identifies key mandates for authentication, encryption, and data privacy.</li>
+<li class="">It auto-generates a series of formal requirements in SysML within the model, such as: <em>"The ECU shall establish a TLS 1.3 encrypted channel with the cloud server before transmitting any user data."</em></li>
+<li class="">It analyzes these new requirements against existing architectural constraints for the ECU, like its limited processing power or real-time operating system (RTOS) task deadlines.</li>
+<li class="">It flags a potential conflict: the computational overhead of TLS 1.3 might impact the ECU's ability to meet a hard real-time deadline related to battery monitoring.</li>
+</ul>
+</li>
+<li class=""><strong>Outcome:</strong> The systems architect is immediately alerted to a critical design trade-off. Instead of discovering this during hardware-in-the-loop testing, the team can address it upfront—perhaps by selecting a more powerful microprocessor or optimizing the security protocol implementation.</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-road-ahead">The Road Ahead<a href="https://mbseexplained.com/blog/ai-powered-requirements-automating-mbse-automotive-specs/#the-road-ahead" class="hash-link" aria-label="Direct link to The Road Ahead" title="Direct link to The Road Ahead" translate="no">​</a></h2>
+<p>AI is not a magic wand. The quality of its output depends heavily on the quality of the training data and the clarity of the input documents. Human oversight from experienced domain experts is—and will remain—absolutely critical. The engineer's role will shift from manually writing every requirement to validating, refining, and curating the output generated by their AI assistant.</p>
+<p>This partnership between human intellect and artificial intelligence is the future of complex systems design. By automating the mundane, we free up engineers to focus on what they do best: innovation and problem-solving.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="conclusion">Conclusion<a href="https://mbseexplained.com/blog/ai-powered-requirements-automating-mbse-automotive-specs/#conclusion" class="hash-link" aria-label="Direct link to Conclusion" title="Direct link to Conclusion" translate="no">​</a></h3>
+<p>Integrating AI into our MBSE workflows is no longer a futuristic concept; it's a practical solution to the overwhelming complexity of modern automotive systems. It allows us to build better, safer, and more reliable software-defined vehicles by ensuring our requirements are complete, consistent, and traceable from day one. By embracing this technology, we can accelerate development, reduce errors, and deliver the cutting-edge features that customers demand.</p>
+<p>What are your thoughts on using AI for requirements engineering? Have you experimented with any tools in this space? Share your experience in the comments below! Let's continue the conversation on simplifying systems for smarter EVs.</p>]]></content>
+        <author>
+            <name>Blagoje Mrkic</name>
+            <uri>https://blnlabs.com</uri>
+        </author>
+        <category label="MBSE" term="MBSE"/>
+        <category label="AI" term="AI"/>
+        <category label="automotive" term="automotive"/>
+        <category label="requirements engineering" term="requirements engineering"/>
+        <category label="software-defined vehicle" term="software-defined vehicle"/>
+        <category label="EV" term="EV"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Navigating the Automotive Systems Engineering Workflow: The V-Model Explained]]></title>
@@ -457,6 +552,13 @@ A lightweight, text-based diagramming tool.</p>
             <name>Blagoje Mrkic</name>
             <uri>https://blnlabs.com</uri>
         </author>
+        <category label="MBSE" term="MBSE"/>
+        <category label="automotive" term="automotive"/>
+        <category label="systems engineering" term="systems engineering"/>
+        <category label="V-Model" term="V-Model"/>
+        <category label="EV" term="EV"/>
+        <category label="workflow" term="workflow"/>
+        <category label="requirements engineering" term="requirements engineering"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Software-Defined Cars: How MBSE Enables Over-the-Air Evolution]]></title>
@@ -519,6 +621,13 @@ A lightweight, text-based diagramming tool.</p>
             <name>Blagoje Mrkic</name>
             <uri>https://blnlabs.com</uri>
         </author>
+        <category label="MBSE" term="MBSE"/>
+        <category label="automotive" term="automotive"/>
+        <category label="EV" term="EV"/>
+        <category label="software-defined vehicle" term="software-defined vehicle"/>
+        <category label="OTA" term="OTA"/>
+        <category label="software architecture" term="software architecture"/>
+        <category label="SysML" term="SysML"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[SysML v2: The Next Frontier in Automotive System Modeling]]></title>
@@ -582,72 +691,13 @@ A lightweight, text-based diagramming tool.</p>
             <name>Blagoje Mrkic</name>
             <uri>https://blnlabs.com</uri>
         </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[AI-Powered Requirements: Automating MBSE for Smarter Automotive Specs]]></title>
-        <id>https://mbseexplained.com/blog/ai-powered-requirements-automating-mbse-automotive-specs/</id>
-        <link href="https://mbseexplained.com/blog/ai-powered-requirements-automating-mbse-automotive-specs/"/>
-        <updated>2025-10-10T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[AI powered requirements with MBSE]]></summary>
-        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="AI powered requirements with MBSE" src="https://mbseexplained.com/assets/images/banner-1ba87614d225727cd29403036351f8d9.jpg" width="1280" height="720" class="img_ev3q"></p>
-<p>AI powered requirements with MBSE</p>
-<p>Welcome back to MBSE Explained! In my years working as a model-based developer and architect in the automotive world, I’ve seen the complexity of vehicle systems explode. We’ve moved from isolated ECUs to a world of software-defined vehicles (SDVs) that are constantly connected, updated, and evolving. This shift has turned traditional requirements engineering—often managed in spreadsheets and documents—into a significant bottleneck. It's slow, prone to error, and struggles to keep up with the pace of innovation demanded by modern EVs and connected cars.</p>
-<p>But what if we could automate the most tedious parts of this process? What if we could leverage artificial intelligence to help us create clearer, more consistent, and more robust requirements directly within our models? That’s exactly what the fusion of AI and Model-Based Systems Engineering (MBSE) promises. This isn't science fiction; it's the next logical step in building smarter systems. In this post, we'll explore how AI is set to revolutionize requirements engineering for the automotive industry, making our development cycles faster and our vehicles smarter.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-modern-automotive-challenge-a-flood-of-requirements">The Modern Automotive Challenge: A Flood of Requirements<a href="https://mbseexplained.com/blog/ai-powered-requirements-automating-mbse-automotive-specs/#the-modern-automotive-challenge-a-flood-of-requirements" class="hash-link" aria-label="Direct link to The Modern Automotive Challenge: A Flood of Requirements" title="Direct link to The Modern Automotive Challenge: A Flood of Requirements" translate="no">​</a></h2>
-<p>The software-defined vehicle isn't just a car with a big screen; it's a complex, distributed computing system on wheels. Consider the sheer volume and variety of requirements we now juggle:</p>
-<ul>
-<li class=""><strong>Connectivity:</strong> Features like Vehicle-to-Everything (V2X) communication and seamless cloud integration for telematics and over-the-air (OTA) updates.</li>
-<li class=""><strong>Functional Safety (ISO 26262):</strong> Strict mandates to ensure electronic systems don't fail in dangerous ways.</li>
-<li class=""><strong>Cybersecurity (ISO/SAE 21434):</strong> Protecting the vehicle from malicious attacks, a non-negotiable for connected systems.</li>
-<li class=""><strong>Customer Features:</strong> A constantly growing list of demands for infotainment, driver assistance (ADAS), and personalization.</li>
-</ul>
-<p>Managing these interconnected requirements in isolated documents is a recipe for disaster. It leads to ambiguity, missed dependencies, and costly rework late in the development cycle. MBSE provides the structured, model-based foundation to manage this complexity, but the initial effort of capturing and refining thousands of requirements is still immense.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="where-mbse-meets-ai-the-automation-powerhouse">Where MBSE Meets AI: The Automation Powerhouse<a href="https://mbseexplained.com/blog/ai-powered-requirements-automating-mbse-automotive-specs/#where-mbse-meets-ai-the-automation-powerhouse" class="hash-link" aria-label="Direct link to Where MBSE Meets AI: The Automation Powerhouse" title="Direct link to Where MBSE Meets AI: The Automation Powerhouse" translate="no">​</a></h2>
-<p>This is where AI changes the game. Think of MBSE as the perfect chassis for systems engineering—it provides the structure, traceability, and a single source of truth. AI is the intelligent engine we can now place inside that chassis.</p>
-<p>By integrating AI, specifically Natural Language Processing (NLP) and machine learning algorithms, into an MBSE workflow, we can automate tasks that have always been manual, time-consuming, and error-prone. The AI isn’t replacing the systems engineer; it’s becoming their most powerful assistant, capable of processing vast amounts of information and identifying patterns humans might miss.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="practical-ai-applications-for-automotive-requirements">Practical AI Applications for Automotive Requirements<a href="https://mbseexplained.com/blog/ai-powered-requirements-automating-mbse-automotive-specs/#practical-ai-applications-for-automotive-requirements" class="hash-link" aria-label="Direct link to Practical AI Applications for Automotive Requirements" title="Direct link to Practical AI Applications for Automotive Requirements" translate="no">​</a></h2>
-<p>So, how does this work in practice? Let's break down a few key applications that are already becoming a reality.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-extracting-requirements-from-unstructured-sources">1. Extracting Requirements from Unstructured Sources<a href="https://mbseexplained.com/blog/ai-powered-requirements-automating-mbse-automotive-specs/#1-extracting-requirements-from-unstructured-sources" class="hash-link" aria-label="Direct link to 1. Extracting Requirements from Unstructured Sources" title="Direct link to 1. Extracting Requirements from Unstructured Sources" translate="no">​</a></h3>
-<p>Engineers receive input from countless sources: customer feature requests, marketing documents, federal regulations, and technical standards. An AI-powered tool can scan these documents and perform a first pass at identifying and formalizing potential requirements.</p>
-<ul>
-<li class=""><strong>Example:</strong> An NLP model could parse a 300-page UNECE regulation on cybersecurity and automatically generate a set of candidate requirements, classifying them by priority and linking them to the source text. This alone can save weeks of manual work.</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-automated-requirement-generation-and-refinement">2. Automated Requirement Generation and Refinement<a href="https://mbseexplained.com/blog/ai-powered-requirements-automating-mbse-automotive-specs/#2-automated-requirement-generation-and-refinement" class="hash-link" aria-label="Direct link to 2. Automated Requirement Generation and Refinement" title="Direct link to 2. Automated Requirement Generation and Refinement" translate="no">​</a></h3>
-<p>Once high-level stakeholder needs are in the model, AI can help decompose them into detailed, verifiable system and software requirements. It can learn from past projects and established patterns to ensure requirements are written clearly and consistently.</p>
-<ul>
-<li class=""><strong>Example:</strong> A high-level need like, <em>"The vehicle shall support OTA updates for the powertrain controller,"</em> can be automatically broken down by an AI into specific requirements for <strong>security</strong> (e.g., "The update package shall be cryptographically signed"), <strong>performance</strong> (e.g., "The update shall complete within 15 minutes with the vehicle in a safe state"), and <strong>reliability</strong> (e.g., "A robust rollback mechanism shall be implemented in case of update failure").</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-consistency-and-conflict-detection">3. Consistency and Conflict Detection<a href="https://mbseexplained.com/blog/ai-powered-requirements-automating-mbse-automotive-specs/#3-consistency-and-conflict-detection" class="hash-link" aria-label="Direct link to 3. Consistency and Conflict Detection" title="Direct link to 3. Consistency and Conflict Detection" translate="no">​</a></h3>
-<p>In a model with thousands of requirements, it's nearly impossible for a human to spot every contradiction. AI excels at this. It can analyze the entire requirements set within the MBSE model to flag potential issues.</p>
-<ul>
-<li class=""><strong>Example:</strong> The model might contain one requirement for a sub-second boot time for an infotainment ECU and another from a cybersecurity stakeholder demanding extensive boot-time integrity checks. An AI can immediately flag this conflict, allowing architects to negotiate a trade-off early in the design phase, not during integration testing.</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-automating-traceability">4. Automating Traceability<a href="https://mbseexplained.com/blog/ai-powered-requirements-automating-mbse-automotive-specs/#4-automating-traceability" class="hash-link" aria-label="Direct link to 4. Automating Traceability" title="Direct link to 4. Automating Traceability" translate="no">​</a></h3>
-<p>Manually creating links between requirements, architecture blocks, and test cases is one of the most tedious tasks in MBSE. AI can suggest and even automatically create these traceability links based on semantic analysis of the text. This not only saves time but also ensures the model remains a true, interconnected digital thread.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="real-world-example-a-cloud-linked-ev-charging-system">Real-World Example: A Cloud-Linked EV Charging System<a href="https://mbseexplained.com/blog/ai-powered-requirements-automating-mbse-automotive-specs/#real-world-example-a-cloud-linked-ev-charging-system" class="hash-link" aria-label="Direct link to Real-World Example: A Cloud-Linked EV Charging System" title="Direct link to Real-World Example: A Cloud-Linked EV Charging System" translate="no">​</a></h2>
-<p>Let's ground this with a concrete automotive example. Imagine we are designing an onboard charger ECU that communicates with a cloud backend to authorize payments and optimize charging schedules.</p>
-<ol>
-<li class=""><strong>Input:</strong> The high-level feature is "The ECU must securely manage charging sessions via the cloud." We also feed the AI relevant standards like ISO 15118 (for vehicle-to-grid communication) and ISO/SAE 21434 (cybersecurity).</li>
-<li class=""><strong>AI + MBSE Process:</strong>
-<ul>
-<li class="">The AI's NLP engine parses the standards and identifies key mandates for authentication, encryption, and data privacy.</li>
-<li class="">It auto-generates a series of formal requirements in SysML within the model, such as: <em>"The ECU shall establish a TLS 1.3 encrypted channel with the cloud server before transmitting any user data."</em></li>
-<li class="">It analyzes these new requirements against existing architectural constraints for the ECU, like its limited processing power or real-time operating system (RTOS) task deadlines.</li>
-<li class="">It flags a potential conflict: the computational overhead of TLS 1.3 might impact the ECU's ability to meet a hard real-time deadline related to battery monitoring.</li>
-</ul>
-</li>
-<li class=""><strong>Outcome:</strong> The systems architect is immediately alerted to a critical design trade-off. Instead of discovering this during hardware-in-the-loop testing, the team can address it upfront—perhaps by selecting a more powerful microprocessor or optimizing the security protocol implementation.</li>
-</ol>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-road-ahead">The Road Ahead<a href="https://mbseexplained.com/blog/ai-powered-requirements-automating-mbse-automotive-specs/#the-road-ahead" class="hash-link" aria-label="Direct link to The Road Ahead" title="Direct link to The Road Ahead" translate="no">​</a></h2>
-<p>AI is not a magic wand. The quality of its output depends heavily on the quality of the training data and the clarity of the input documents. Human oversight from experienced domain experts is—and will remain—absolutely critical. The engineer's role will shift from manually writing every requirement to validating, refining, and curating the output generated by their AI assistant.</p>
-<p>This partnership between human intellect and artificial intelligence is the future of complex systems design. By automating the mundane, we free up engineers to focus on what they do best: innovation and problem-solving.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="conclusion">Conclusion<a href="https://mbseexplained.com/blog/ai-powered-requirements-automating-mbse-automotive-specs/#conclusion" class="hash-link" aria-label="Direct link to Conclusion" title="Direct link to Conclusion" translate="no">​</a></h3>
-<p>Integrating AI into our MBSE workflows is no longer a futuristic concept; it's a practical solution to the overwhelming complexity of modern automotive systems. It allows us to build better, safer, and more reliable software-defined vehicles by ensuring our requirements are complete, consistent, and traceable from day one. By embracing this technology, we can accelerate development, reduce errors, and deliver the cutting-edge features that customers demand.</p>
-<p>What are your thoughts on using AI for requirements engineering? Have you experimented with any tools in this space? Share your experience in the comments below! Let's continue the conversation on simplifying systems for smarter EVs.</p>]]></content>
-        <author>
-            <name>Blagoje Mrkic</name>
-            <uri>https://blnlabs.com</uri>
-        </author>
+        <category label="MBSE" term="MBSE"/>
+        <category label="SysML" term="SysML"/>
+        <category label="SysMLv2" term="SysMLv2"/>
+        <category label="automotive" term="automotive"/>
+        <category label="EV" term="EV"/>
+        <category label="systems engineering" term="systems engineering"/>
+        <category label="ISO 26262" term="ISO 26262"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Unlocking MBSE Success - The Power of Methodology in Automotive & EV Development]]></title>
@@ -677,6 +727,14 @@ A lightweight, text-based diagramming tool.</p>
             <name>Blagoje Mrkic</name>
             <uri>https://blnlabs.com</uri>
         </author>
+        <category label="MBSE" term="MBSE"/>
+        <category label="methodology" term="methodology"/>
+        <category label="automotive" term="automotive"/>
+        <category label="EV" term="EV"/>
+        <category label="systems engineering" term="systems engineering"/>
+        <category label="SysML" term="SysML"/>
+        <category label="AI" term="AI"/>
+        <category label="object-oriented" term="object-oriented"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Mastering MBSE for EV Development with MathWorks: A Seamless Workflow]]></title>
@@ -713,5 +771,14 @@ A lightweight, text-based diagramming tool.</p>
             <name>Blagoje Mrkic</name>
             <uri>https://blnlabs.com</uri>
         </author>
+        <category label="MBSE" term="MBSE"/>
+        <category label="automotive" term="automotive"/>
+        <category label="EV" term="EV"/>
+        <category label="systems engineering" term="systems engineering"/>
+        <category label="MathWorks" term="MathWorks"/>
+        <category label="System Composer" term="System Composer"/>
+        <category label="Requirements Toolbox" term="Requirements Toolbox"/>
+        <category label="Simulink" term="Simulink"/>
+        <category label="MBD" term="MBD"/>
     </entry>
 </feed>
