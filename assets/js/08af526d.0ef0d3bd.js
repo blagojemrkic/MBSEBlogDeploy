@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmbse_blog=self.webpackChunkmbse_blog||[]).push([[529],{1344:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/blog","page":1,"postsPerPage":18,"totalPages":1,"totalCount":18,"blogDescription":"Model Based Systems Engineering Explained ","blogTitle":"MBSE Explained"}}')}}]);
