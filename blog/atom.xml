@@ -485,6 +485,7 @@ Requirement Management Tool - Why Automotive and IoT Teams Can't Afford to Skip 
 <p>For automotive systems—where long lifecycles and customization are the norm—these benefits are especially valuable.</p>
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="key-open-source-mbse-tools">Key Open Source MBSE Tools<a href="https://mbseexplained.com/blog/open-source-mbse-tools-automotive/#key-open-source-mbse-tools" class="hash-link" aria-label="Direct link to Key Open Source MBSE Tools" title="Direct link to Key Open Source MBSE Tools" translate="no">​</a></h2>
+<p><img decoding="async" loading="lazy" alt="Open source MBSE tool landscape for automotive: Papyrus, Capella, Modelio, SysML v2 pilot, SysON, OpenModelica and PlantUML grouped by role" src="https://mbseexplained.com/assets/images/open-source-mbse-tool-landscape-0cfdc1a1319624af9951d6837ae57309.png" width="1600" height="900" class="img_ev3q"></p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="eclipse-papyrus">Eclipse Papyrus<a href="https://mbseexplained.com/blog/open-source-mbse-tools-automotive/#eclipse-papyrus" class="hash-link" aria-label="Direct link to Eclipse Papyrus" title="Direct link to Eclipse Papyrus" translate="no">​</a></h3>
 <p><strong>What it is:</strong>
 An Eclipse-based modeling environment supporting UML and SysML.</p>
@@ -508,6 +509,7 @@ An open source systems engineering tool built around the <strong>Arcadia</strong
 <li class="">Method-driven, which helps organizations new to MBSE</li>
 </ul>
 <p>Capella is particularly effective for <strong>vehicle-level architecture and platform design</strong>.</p>
+<p><img decoding="async" loading="lazy" alt="Arcadia layers in Capella mapped to an EV programme: operational, system, logical and physical architecture" src="https://mbseexplained.com/assets/images/capella-arcadia-layers-ev-architecture-937723ed1310825c13c7a19d9ad12f7f.png" width="1600" height="900" class="img_ev3q"></p>
 <hr>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="modelio-open-source-core">Modelio (Open Source Core)<a href="https://mbseexplained.com/blog/open-source-mbse-tools-automotive/#modelio-open-source-core" class="hash-link" aria-label="Direct link to Modelio (Open Source Core)" title="Direct link to Modelio (Open Source Core)" translate="no">​</a></h3>
 <p><strong>What it is:</strong>
@@ -532,6 +534,7 @@ The official open source reference implementation for <strong>SysML v2</strong>.
 <li class="">Ideal for toolchain integration (CI/CD, analysis, simulation)</li>
 </ul>
 <p>This is especially relevant for <strong>software-defined vehicles</strong>.</p>
+<p><img decoding="async" loading="lazy" alt="Textual-first SysML v2 model flowing through Git and a CI pipeline into validation, simulation and documentation" src="https://mbseexplained.com/assets/images/sysml-v2-textual-modeling-ci-pipeline-782462fdbebf66f0ab98aad319a14224.png" width="1600" height="900" class="img_ev3q"></p>
 <hr>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="openmodelica">OpenModelica<a href="https://mbseexplained.com/blog/open-source-mbse-tools-automotive/#openmodelica" class="hash-link" aria-label="Direct link to OpenModelica" title="Direct link to OpenModelica" translate="no">​</a></h3>
 <p><strong>What it is:</strong>
@@ -572,6 +575,7 @@ A lightweight, text-based diagramming tool.</p>
 </ul>
 <p>For EV and SDV programs especially, open source MBSE aligns naturally with <strong>software-defined, automation-driven development</strong>. Companies that invest now can build leaner toolchains, retain engineering knowledge in-house, and react faster to market changes.</p>
 <p>This is a rare moment where technical and economic incentives point in the same direction.</p>
+<p><img decoding="async" loading="lazy" alt="Open source MBSE opportunity versus guardrails: vendor independence and in-house competence against ISO 26262 tool qualification and governance" src="https://mbseexplained.com/assets/images/open-source-mbse-opportunity-vs-guardrails-54906018ab55af255cdbffedc99e7578.png" width="1600" height="900" class="img_ev3q"></p>
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="when-to-be-careful">When to Be Careful<a href="https://mbseexplained.com/blog/open-source-mbse-tools-automotive/#when-to-be-careful" class="hash-link" aria-label="Direct link to When to Be Careful" title="Direct link to When to Be Careful" translate="no">​</a></h2>
 <p>Open source is not magic. Automotive teams must still consider:</p>
