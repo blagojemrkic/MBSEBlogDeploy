@@ -2,12 +2,50 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mbseexplained.com/blog/</id>
     <title>MBSE Explained Blog</title>
-    <updated>2026-07-19T00:00:00.000Z</updated>
+    <updated>2026-08-20T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://mbseexplained.com/blog/"/>
     <subtitle>MBSE Explained Blog</subtitle>
     <icon>https://mbseexplained.com/img/logo.ico</icon>
     <rights>Copyright © 2026 Facebook, Inc.</rights>
+    <entry>
+        <title type="html"><![CDATA[EasyARXML Rebuilt - It No Longer Touches a Server and exports PDF report]]></title>
+        <id>https://mbseexplained.com/blog/easyarxml-in-browser-parsing-pdf-report/</id>
+        <link href="https://mbseexplained.com/blog/easyarxml-in-browser-parsing-pdf-report/"/>
+        <updated>2026-08-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Two changes that matter for automotive teams: EasyARXML now parses ARXML entirely in your browser (your file never leaves your machine) and can export the diagram as a shareable PDF report.]]></summary>
+        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="EasyARXML — a free online ARXML viewer that renders your file as a diagram, entirely in your browser" src="https://mbseexplained.com/assets/images/banner-5dc396402ccd8adeb2ca05f7866d06db.png" width="1200" height="630" class="img_ev3q">
+Two updates to <a href="https://easyarxml.com/" target="_blank" rel="noopener noreferrer" class="">EasyARXML</a>: the parser now runs entirely in your browser, and you can export the diagram as a PDF report.</p>
+<p>A while back I wrote about <a class="" href="https://mbseexplained.com/blog/arxml-license-trap-review-without-a-seat/">why reading an ARXML file shouldn't cost you a tool license</a>, and introduced <a href="https://easyarxml.com/" target="_blank" rel="noopener noreferrer" class=""><strong>EasyARXML</strong></a> — a free, in-browser viewer that turns an AUTOSAR <code>.arxml</code> into a diagram of software components, ports and connectors. Since then I've made two changes that matter enough to write about, because both came directly from the same realization: I was building for automotive engineers, and the first version didn't fully respect what that means.</p>
+<p>Welcome to MBSE Explained. This is a short, honest changelog — what changed, and why.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-it-no-longer-touches-a-server">1. It No Longer Touches a Server<a href="https://mbseexplained.com/blog/easyarxml-in-browser-parsing-pdf-report/#1-it-no-longer-touches-a-server" class="hash-link" aria-label="Direct link to 1. It No Longer Touches a Server" title="Direct link to 1. It No Longer Touches a Server" translate="no">​</a></h2>
+<p>The first version of EasyARXML parsed ARXML <strong>server-side</strong>. You'd drop a file, it would go up to a backend, get parsed, and the diagram would come back. Technically fine. Architecturally wrong — for this audience specifically.</p>
+<p>Here's the problem I should have led with from day one: <strong>ARXML describes confidential vehicle software.</strong> It's covered by NDAs, it's competitively sensitive, and nobody in automotive should be uploading it to a random web tool — mine included. A viewer that quietly ships your file to a server it doesn't control is asking you to do exactly the thing your security and legal teams tell you not to do. The convenience isn't worth it, and honestly it shouldn't have been on the table.</p>
+<p>So the parser moved into the browser. Now your file is <strong>read locally, rendered locally, and never leaves your machine.</strong> There's no upload, no server round-trip, no storage. And you don't have to take my word for it — open your browser's Network tab, drop in a file, and watch. It takes about five seconds to confirm that nothing goes out. That verifiability is the point: privacy you can check beats privacy you're asked to trust.</p>
+<p>This one change is what makes EasyARXML usable inside an automotive organization at all. Everything else is a feature. This is the foundation.</p>
+<p><img decoding="async" loading="lazy" alt="EasyARXML parsing an ARXML file entirely in the browser, with no upload or server round-trip" src="https://mbseexplained.com/assets/images/3-0d8442966de3f2e8e89ef97ff69369ee.gif" width="800" height="640" class="img_ev3q"></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-download-a-pdf-report">2. Download a PDF Report<a href="https://mbseexplained.com/blog/easyarxml-in-browser-parsing-pdf-report/#2-download-a-pdf-report" class="hash-link" aria-label="Direct link to 2. Download a PDF Report" title="Direct link to 2. Download a PDF Report" translate="no">​</a></h2>
+<p>The second change is about getting the diagram <em>out</em> of the browser and into your workflow.</p>
+<p>You can now <strong>auto-arrange the diagram and export it as a PDF</strong> — software components, ports and connectors, laid out cleanly on a page. It's something you can actually attach to a review, drop into a design discussion, or hand to an integrator who needs to see the structure without opening any tooling at all.</p>
+<p><img decoding="async" loading="lazy" alt="Exporting the EasyARXML component diagram as a PDF report" src="https://mbseexplained.com/assets/images/2-2f7121c07d5350eeadd680dd5c445afb.gif" width="800" height="640" class="img_ev3q"></p>
+<p>That closes a small but real gap. Viewing an ARXML in your browser is useful; being able to <em>share what you saw</em> — as a clean artifact, not a screenshot — is what makes it part of a real review loop instead of a throwaway glance.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="why-this-exists-at-all">Why This Exists At All<a href="https://mbseexplained.com/blog/easyarxml-in-browser-parsing-pdf-report/#why-this-exists-at-all" class="hash-link" aria-label="Direct link to Why This Exists At All" title="Direct link to Why This Exists At All" translate="no">​</a></h2>
+<p>Both changes trace back to the same everyday annoyance that made me build EasyARXML in the first place. I kept opening heavyweight configuration tools — the kind that take real time just to launch — for one small question: <em>"what actually changed in this file?"</em> Or an even simpler one: <em>"what's in this thing a supplier just sent me?"</em></p>
+<p>That's not a job that should require a full authoring seat, a license checkout, or a wait on a shared license pool. It's a <em>reading</em> task. And reading tasks are frequent, quick, and — done right — should be private and free. EasyARXML is my attempt to make that specific moment painless: open the file, see the architecture, export it if you need to, and never once worry about where the file went.</p>
+<p>It's a viewer, deliberately — it doesn't replace your configurator for the work that genuinely needs one. It just removes that tool from the large number of moments when all you needed was to look.</p>
+<p>If you work with ARXML, <a href="https://easyarxml.com/" target="_blank" rel="noopener noreferrer" class="">try it with one of your own files</a> — and if you still don't trust it, that's exactly what the Network tab is for.</p>
+<p>That's the mission here at MBSE Explained — simplifying systems for smarter EVs. What's the ARXML task that most often makes you reach for a heavyweight tool when you wish you didn't have to? Tell me in the comments — it shapes what I build next.</p>]]></content>
+        <author>
+            <name>Blagoje Mrkic</name>
+            <uri>https://blnlabs.com</uri>
+        </author>
+        <category label="automotive" term="automotive"/>
+        <category label="AUTOSAR" term="AUTOSAR"/>
+        <category label="ARXML" term="ARXML"/>
+        <category label="embedded" term="embedded"/>
+        <category label="EasyARXML" term="EasyARXML"/>
+        <category label="systems engineering" term="systems engineering"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ARXML Explained: What AUTOSAR's XML Format Really Is, and the Workflow Around It]]></title>
         <id>https://mbseexplained.com/blog/arxml-explained-autosar-workflow/</id>
@@ -464,146 +502,5 @@ Requirement Management Tool - Why Automotive and IoT Teams Can't Afford to Skip 
         <category label="EV" term="EV"/>
         <category label="systems engineering" term="systems engineering"/>
         <category label="requirements management" term="requirements management"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Open Source MBSE Tools for Automotive Engineering: A Practical Guide]]></title>
-        <id>https://mbseexplained.com/blog/open-source-mbse-tools-automotive/</id>
-        <link href="https://mbseexplained.com/blog/open-source-mbse-tools-automotive/"/>
-        <updated>2025-12-18T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Open Source MBSE Tools for Automotive Engineering: A Practical Guide]]></summary>
-        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="Open Source MBSE Tools for Automotive Engineering: A Practical Guide" src="https://mbseexplained.com/assets/images/opensrc-c74ce67f6e22bc9680eeca68f5d13150.png" width="1536" height="1024" class="img_ev3q"></p>
-<p>How open source tools can influence automotive industry in these challenging times.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="introduction">Introduction<a href="https://mbseexplained.com/blog/open-source-mbse-tools-automotive/#introduction" class="hash-link" aria-label="Direct link to Introduction" title="Direct link to Introduction" translate="no">​</a></h2>
-<p>Welcome to <strong>MBSE Explained</strong>. Model-Based Systems Engineering (MBSE) has become a cornerstone of modern automotive and EV development—helping teams manage complexity across software, hardware, safety, and verification. Traditionally, MBSE in automotive has been dominated by expensive proprietary tools, long licensing cycles, and vendor lock-in.</p>
-<p>However, the ecosystem is changing. Open source MBSE tools have matured significantly in recent years, offering credible alternatives for system modeling, architecture definition, simulation, and traceability. For an industry under pressure—from electrification costs to shrinking margins—this shift is not just technical, but strategic.</p>
-<p>In this article, I’ll walk through the most relevant <strong>open source MBSE tools</strong>, explain <strong>why they are good</strong>, and then zoom out to show <strong>why switching to open source MBSE is a real opportunity for the automotive industry right now</strong>. This perspective is based on hands-on experience in model-based embedded software and systems architecture across automotive projects.</p>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="why-open-source-mbse-matters">Why Open Source MBSE Matters<a href="https://mbseexplained.com/blog/open-source-mbse-tools-automotive/#why-open-source-mbse-matters" class="hash-link" aria-label="Direct link to Why Open Source MBSE Matters" title="Direct link to Why Open Source MBSE Matters" translate="no">​</a></h2>
-<p>Open source MBSE tools offer several structural advantages:</p>
-<ul>
-<li class=""><strong>Transparency:</strong> You can inspect metamodels, profiles, and transformations.</li>
-<li class=""><strong>Extensibility:</strong> Tools can be adapted to company-specific processes.</li>
-<li class=""><strong>Cost control:</strong> No per-seat licensing limits experimentation and scaling.</li>
-<li class=""><strong>Ecosystem-driven innovation:</strong> Features evolve based on real engineering needs.</li>
-</ul>
-<p>For automotive systems—where long lifecycles and customization are the norm—these benefits are especially valuable.</p>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="key-open-source-mbse-tools">Key Open Source MBSE Tools<a href="https://mbseexplained.com/blog/open-source-mbse-tools-automotive/#key-open-source-mbse-tools" class="hash-link" aria-label="Direct link to Key Open Source MBSE Tools" title="Direct link to Key Open Source MBSE Tools" translate="no">​</a></h2>
-<p><img decoding="async" loading="lazy" alt="Open source MBSE tool landscape for automotive: Papyrus, Capella, Modelio, SysML v2 pilot, SysON, OpenModelica and PlantUML grouped by role" src="https://mbseexplained.com/assets/images/open-source-mbse-tool-landscape-0cfdc1a1319624af9951d6837ae57309.png" width="1600" height="900" class="img_ev3q"></p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="eclipse-papyrus">Eclipse Papyrus<a href="https://mbseexplained.com/blog/open-source-mbse-tools-automotive/#eclipse-papyrus" class="hash-link" aria-label="Direct link to Eclipse Papyrus" title="Direct link to Eclipse Papyrus" translate="no">​</a></h3>
-<p><strong>What it is:</strong>
-An Eclipse-based modeling environment supporting UML and SysML.</p>
-<p><strong>Why it’s good:</strong></p>
-<ul>
-<li class="">Strong <strong>SysML 1.x</strong> support for system structure, behavior, and requirements</li>
-<li class="">Highly extensible via Eclipse plugins</li>
-<li class="">Well-suited for <strong>custom automotive profiles</strong> (e.g., function nets, variants)</li>
-<li class="">Backed by a large industrial and academic community</li>
-</ul>
-<p>Papyrus is often the first serious open source alternative to proprietary SysML tools.</p>
-<hr>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="capella-arcadia-method">Capella (Arcadia Method)<a href="https://mbseexplained.com/blog/open-source-mbse-tools-automotive/#capella-arcadia-method" class="hash-link" aria-label="Direct link to Capella (Arcadia Method)" title="Direct link to Capella (Arcadia Method)" translate="no">​</a></h3>
-<p><strong>What it is:</strong>
-An open source systems engineering tool built around the <strong>Arcadia</strong> methodology.</p>
-<p><strong>Why it’s good:</strong></p>
-<ul>
-<li class="">Clear separation of <strong>operational, system, logical, and physical architecture</strong></li>
-<li class="">Excellent for <strong>early vehicle architecture and E/E systems</strong></li>
-<li class="">Strong traceability across abstraction levels</li>
-<li class="">Method-driven, which helps organizations new to MBSE</li>
-</ul>
-<p>Capella is particularly effective for <strong>vehicle-level architecture and platform design</strong>.</p>
-<p><img decoding="async" loading="lazy" alt="Arcadia layers in Capella mapped to an EV programme: operational, system, logical and physical architecture" src="https://mbseexplained.com/assets/images/capella-arcadia-layers-ev-architecture-937723ed1310825c13c7a19d9ad12f7f.png" width="1600" height="900" class="img_ev3q"></p>
-<hr>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="modelio-open-source-core">Modelio (Open Source Core)<a href="https://mbseexplained.com/blog/open-source-mbse-tools-automotive/#modelio-open-source-core" class="hash-link" aria-label="Direct link to Modelio (Open Source Core)" title="Direct link to Modelio (Open Source Core)" translate="no">​</a></h3>
-<p><strong>What it is:</strong>
-A modeling tool with an open source core and optional commercial extensions.</p>
-<p><strong>Why it’s good:</strong></p>
-<ul>
-<li class="">UML and SysML support with a clean UI</li>
-<li class="">Java-based and scriptable</li>
-<li class="">Easier onboarding compared to heavier tools</li>
-<li class="">Good balance between usability and modeling power</li>
-</ul>
-<p>Modelio works well for teams transitioning gradually into MBSE.</p>
-<hr>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="sysml-v2-pilot-implementation-omg">SysML v2 Pilot Implementation (OMG)<a href="https://mbseexplained.com/blog/open-source-mbse-tools-automotive/#sysml-v2-pilot-implementation-omg" class="hash-link" aria-label="Direct link to SysML v2 Pilot Implementation (OMG)" title="Direct link to SysML v2 Pilot Implementation (OMG)" translate="no">​</a></h3>
-<p><strong>What it is:</strong>
-The official open source reference implementation for <strong>SysML v2</strong>.</p>
-<p><strong>Why it’s good:</strong></p>
-<ul>
-<li class="">Represents the future of MBSE modeling standards</li>
-<li class="">Textual-first modeling improves <strong>version control and automation</strong></li>
-<li class="">Better semantics for software-heavy automotive systems</li>
-<li class="">Ideal for toolchain integration (CI/CD, analysis, simulation)</li>
-</ul>
-<p>This is especially relevant for <strong>software-defined vehicles</strong>.</p>
-<p><img decoding="async" loading="lazy" alt="Textual-first SysML v2 model flowing through Git and a CI pipeline into validation, simulation and documentation" src="https://mbseexplained.com/assets/images/sysml-v2-textual-modeling-ci-pipeline-782462fdbebf66f0ab98aad319a14224.png" width="1600" height="900" class="img_ev3q"></p>
-<hr>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="openmodelica">OpenModelica<a href="https://mbseexplained.com/blog/open-source-mbse-tools-automotive/#openmodelica" class="hash-link" aria-label="Direct link to OpenModelica" title="Direct link to OpenModelica" translate="no">​</a></h3>
-<p><strong>What it is:</strong>
-An open source modeling and simulation environment based on Modelica.</p>
-<p><strong>Why it’s good:</strong></p>
-<ul>
-<li class="">Excellent for <strong>multi-domain simulation</strong> (thermal, electrical, mechanical)</li>
-<li class="">Commonly used for <strong>powertrain, battery, and converter systems</strong></li>
-<li class="">Supports FMI/FMU for co-simulation</li>
-<li class="">Complements SysML-based architecture models</li>
-</ul>
-<p>OpenModelica bridges MBSE architecture and physical behavior.</p>
-<hr>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="syson-sysml-v2native-mbse-tool">SysON (SysML v2–Native MBSE Tool)<a href="https://mbseexplained.com/blog/open-source-mbse-tools-automotive/#syson-sysml-v2native-mbse-tool" class="hash-link" aria-label="Direct link to SysON (SysML v2–Native MBSE Tool)" title="Direct link to SysON (SysML v2–Native MBSE Tool)" translate="no">​</a></h3>
-<p>SysON is an open source MBSE tool built natively around SysML v2, making it a strong fit within the evolving open source MBSE ecosystem described in this document. Unlike classic diagram-driven SysML 1.x tools, SysON follows a textual-first and semantic-centric modeling approach, which aligns well with modern automotive development practices such as version control, automation, and continuous integration.</p>
-<p>For automotive and EV programs increasingly shaped by software-defined vehicle (SDV) architectures, SysON enables more precise system definitions, better traceability, and easier integration with downstream analysis and tooling. Its open source nature allows organizations to experiment with SysML v2 concepts early, adapt the tool to internal workflows, and avoid long-term vendor lock-in. As the industry transitions toward more software-heavy and model-driven development, SysON fits naturally as a forward-looking complement to established open source tools like Papyrus and Capella.</p>
-<hr>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="plantuml-text-based-modeling">PlantUML (Text-Based Modeling)<a href="https://mbseexplained.com/blog/open-source-mbse-tools-automotive/#plantuml-text-based-modeling" class="hash-link" aria-label="Direct link to PlantUML (Text-Based Modeling)" title="Direct link to PlantUML (Text-Based Modeling)" translate="no">​</a></h3>
-<p><strong>What it is:</strong>
-A lightweight, text-based diagramming tool.</p>
-<p><strong>Why it’s good:</strong></p>
-<ul>
-<li class="">Easy integration with <strong>Git and documentation</strong></li>
-<li class="">Ideal for <strong>architecture communication</strong></li>
-<li class="">Low entry barrier for software-heavy teams</li>
-<li class="">Useful for requirements and interface diagrams</li>
-</ul>
-<p>While not a full MBSE tool, it fits well into modern workflows.</p>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="why-open-source-is-a-strategic-opportunity-for-automotive-right-now">Why Open Source Is a Strategic Opportunity for Automotive Right Now<a href="https://mbseexplained.com/blog/open-source-mbse-tools-automotive/#why-open-source-is-a-strategic-opportunity-for-automotive-right-now" class="hash-link" aria-label="Direct link to Why Open Source Is a Strategic Opportunity for Automotive Right Now" title="Direct link to Why Open Source Is a Strategic Opportunity for Automotive Right Now" translate="no">​</a></h2>
-<p>The automotive industry is under real pressure: electrification costs, delayed software platforms, shrinking margins, and global competition. In this environment, <strong>open source MBSE is not about saving license fees—it’s about survival and adaptability</strong>.</p>
-<p>Open source enables:</p>
-<ul>
-<li class=""><strong>Faster experimentation</strong> with new E/E architectures</li>
-<li class=""><strong>Reduced dependency</strong> on a single vendor’s roadmap</li>
-<li class=""><strong>Internal tool competence</strong>, not outsourced know-how</li>
-<li class=""><strong>Better alignment</strong> between systems, software, and DevOps</li>
-</ul>
-<p>For EV and SDV programs especially, open source MBSE aligns naturally with <strong>software-defined, automation-driven development</strong>. Companies that invest now can build leaner toolchains, retain engineering knowledge in-house, and react faster to market changes.</p>
-<p>This is a rare moment where technical and economic incentives point in the same direction.</p>
-<p><img decoding="async" loading="lazy" alt="Open source MBSE opportunity versus guardrails: vendor independence and in-house competence against ISO 26262 tool qualification and governance" src="https://mbseexplained.com/assets/images/open-source-mbse-opportunity-vs-guardrails-54906018ab55af255cdbffedc99e7578.png" width="1600" height="900" class="img_ev3q"></p>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="when-to-be-careful">When to Be Careful<a href="https://mbseexplained.com/blog/open-source-mbse-tools-automotive/#when-to-be-careful" class="hash-link" aria-label="Direct link to When to Be Careful" title="Direct link to When to Be Careful" translate="no">​</a></h2>
-<p>Open source is not magic. Automotive teams must still consider:</p>
-<ul>
-<li class="">Tool qualification for <strong>ISO 26262</strong></li>
-<li class="">Process definition and governance</li>
-<li class="">Internal MBSE skill development</li>
-</ul>
-<p>The opportunity lies in <strong>owning the toolchain</strong>, not just adopting it.</p>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="conclusion">Conclusion<a href="https://mbseexplained.com/blog/open-source-mbse-tools-automotive/#conclusion" class="hash-link" aria-label="Direct link to Conclusion" title="Direct link to Conclusion" translate="no">​</a></h2>
-<p>Open source MBSE tools like <strong>Papyrus, Capella, SysML v2 implementations, and OpenModelica</strong> are no longer experimental—they are viable, powerful, and strategically relevant. For an automotive industry navigating difficult times, they offer a path toward <strong>lower costs, higher agility, and deeper engineering ownership</strong>.</p>
-<p>At <strong>MBSE Explained</strong>, our mission is to simplify systems for smarter EVs—and understanding open source MBSE is a key part of that journey.</p>
-<p><strong>What tools have you tried, and where do you see the biggest obstacles? Share your thoughts below.</strong></p>]]></content>
-        <author>
-            <name>Blagoje Mrkic</name>
-            <uri>https://blnlabs.com</uri>
-        </author>
-        <category label="automotive" term="automotive"/>
-        <category label="german automotive" term="german automotive"/>
-        <category label="MBSE" term="MBSE"/>
-        <category label="systems engineering" term="systems engineering"/>
-        <category label="outsourcing" term="outsourcing"/>
-        <category label="Open Source" term="Open Source"/>
-        <category label="EV" term="EV"/>
     </entry>
 </feed>
